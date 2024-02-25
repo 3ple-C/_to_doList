@@ -21,21 +21,22 @@
 
             <div class="d-flex pb-">
                 <div class="pe-1">
-                    <label for="message" class="pb-2 pt-2">Task</label><br>
+                    <label for="message" class="pb-2 pt-2 fw-bold">Task:</label><br>
                     <input type="text" name="message" id="addTask" class="form-control"></input><br>
                 </div>
     
                 <div class="ps-1">
-                    <label for="message" class="pb-2 pt-2">Date</label><br>
+                    <label for="message" class="pb-2 pt-2 fw-bold">Date:</label><br>
                     <input type="date" name="message" id="taskDate" class="form-control w-full px-5"></input><br>
                 </div>
             </div>
 
-            <label for="message" class="pb-2">Details</label><br>
+            <label for="message" class="pb-2 fw-bold">Details:</label><br>
             <textarea type="text" name="message" id="taskDetails" class="form-control"></textarea><br>
-            <div id="status_msg"></div><br>
-            <button type="submit" id="btnTasks" class="btn-success">Add</button>
 
+            <div id="status_msg"></div><br>
+
+            <button type="submit" id="btnTasks" class="btn-success">Add</button>
         </section>
 
         <div id="tasks" class="mt-5">
@@ -44,9 +45,8 @@
     </main>
 
 
-   
+
 
     <script src="./assets/js/todo.js"></script>
 </body>
-
 </html>
