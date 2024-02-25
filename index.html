@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="w-50 mx-auto text-black">
+        <h1 class="onLoadUp text-center  fw-bold">To Do List app</h1>
+    </header>
+
+    <main class="w-50 mx-auto py-3">
+        <section class="create_post w-75 mx-auto border-3 p-3" id="text_msg">
+            <h2 class=" w-75 fw-bold">Add task Here</h2>
+
+            <div class="d-flex pb-">
+                <div class="pe-1">
+                    <label for="message" class="pb-2 pt-2">Task</label><br>
+                    <input type="text" name="message" id="addTask" class="form-control"></input><br>
+                </div>
+    
+                <div class="ps-1">
+                    <label for="message" class="pb-2 pt-2">Date</label><br>
+                    <input type="date" name="message" id="taskDate" class="form-control w-full px-5"></input><br>
+                </div>
+            </div>
+
+            <label for="message" class="pb-2">Details</label><br>
+            <textarea type="text" name="message" id="taskDetails" class="form-control"></textarea><br>
+            <div id="status_msg"></div><br>
+            <button type="submit" id="btnTasks" class="btn-success">Add</button>
+
+        </section>
+
+        <div id="tasks" class="mt-5">
+
+        </div>
+    </main>
+
+
+   
+
+    <script src="./assets/js/todo.js"></script>
+</body>
+
+</html>
